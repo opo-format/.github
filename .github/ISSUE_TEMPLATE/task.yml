@@ -1,0 +1,31 @@
+name: Task
+description: A piece of work with a goal and acceptance criteria.
+labels: []
+body:
+  - type: input
+    id: goal
+    attributes:
+      label: Goal
+      description: One sentence.
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
+      description: Checkable statements, one per line.
+      placeholder: "- opo check passes for objects/door-single-swing"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources needed
+      description: Norms or data the work depends on. Missing sources mean values are entered as to_verify.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [spec, schema, conformance, rust, object, template, ruleset, styles, docs, process]
+    validations:
+      required: true
