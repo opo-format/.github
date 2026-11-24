@@ -1,0 +1,23 @@
+name: Bug
+description: Something does not work as the spec says.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen, according to the spec
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Object, values, command, version.
+    validations:
+      required: true
