@@ -1,0 +1,30 @@
+name: Object
+description: Add or change a library object.
+labels: [object]
+body:
+  - type: input
+    id: id
+    attributes:
+      label: Object id
+      placeholder: window-casement
+    validations:
+      required: true
+  - type: input
+    id: ifc
+    attributes:
+      label: IFC class and predefined type
+      placeholder: IfcWindow / WINDOW
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What it covers and what it does not.
+    validations:
+      required: true
+  - type: textarea
+    id: basis
+    attributes:
+      label: Parametric basis, norms and sources
+      description: Openly licensed basis, IFC property sets, EN/ISO (or UK/US) norms for sizes and rules.
