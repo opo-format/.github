@@ -1,0 +1,19 @@
+name: Proposal (stage 0 idea)
+description: An idea that would change the standard. Accepted ideas become a proposal file in opo/proposals.
+labels: [proposal, normative]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What cannot be done today? Give a concrete object as example.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
