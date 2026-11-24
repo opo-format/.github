@@ -1,0 +1,18 @@
+name: Data
+description: Add or correct values (sizes, limits, rule sets, materials).
+labels: [data]
+body:
+  - type: textarea
+    id: values
+    attributes:
+      label: Values
+      description: Which values, where.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Norm (with edition), maker data or other citable source. Without one, values are entered as to_verify.
+    validations:
+      required: true
